@@ -1,0 +1,41 @@
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    right: 5rem;
+    top:  -0.1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+    visibility: hidden;
+
+    .menu-nav__burger {
+        position: absolute;
+        top: 4rem;
+        width: 28px;
+        height: 3px;
+        background: #fff;
+        
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background: #fff;
+            
+        }
+            
+        &::after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            width: 28px;
+            height: 2px;
+            background: #fff;
+            
+        }
+    }
+
+}   

@@ -1,0 +1,327 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .home {
+  padding-right: 20rem;
+  padding-top: 8rem;
+}
+
+main .home h1 {
+  font-family: "Lora";
+  font-size: 48px;
+  line-height: 61px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+  font-weight: 600;
+}
+
+main .home p {
+  padding-top: 5rem;
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 100;
+  padding-bottom: 1rem;
+}
+
+main .home .read_more {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 22px;
+  font-style: bold;
+  padding-top: 1rem;
+}
+
+main .home .read_more .line {
+  background: #fff;
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  margin: 0.7rem;
+}
+
+main .main-img {
+  width: 621px;
+  height: 586px;
+  fill: image;
+}
+
+main .main-img img {
+  position: relative;
+  width: 621px;
+  height: 586px;
+  margin-top: 8rem;
+  padding-top: 2rem;
+}
+
+main .main-img .secondary-img {
+  position: absolute;
+  background: #181719;
+  width: 390px;
+  height: 189px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 4px rgba(0, 0, 0, 0.7);
+  top: 710px;
+  left: 1175px;
+}
+
+main .main-img .secondary-img .black__rect {
+  position: relative;
+  width: 85px;
+  height: 72px;
+  background: #181719;
+}
+
+main .main-img .secondary-img .black__rect img {
+  width: 40px;
+  height: 72px;
+  bottom: 150px;
+  left: 20px;
+}
+
+main .main-img .secondary-img h3 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  position: absolute;
+  left: 70px;
+  top: 15px;
+}
+
+main .main-img .secondary-img h4 {
+  position: absolute;
+  top: 45px;
+  left: 70px;
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: #828282;
+}
+
+main .main-img .secondary-img p {
+  position: absolute;
+  font-family: "Lora";
+  font-size: 24px;
+  line-height: 31px;
+  font-size: bold;
+  top: 80px;
+  left: 10px;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 5rem;
+  top: -0.1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+}
+
+.menu-btn .menu-nav__burger {
+  position: absolute;
+  top: 4rem;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+}
+
+.menu-btn .menu-nav__burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+}
+
+.menu-btn .menu-nav__burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 150vh;
+  }
+  body .menu-btn {
+    visibility: visible;
+  }
+  body .nav .menu-nav {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+    visibility: hidden;
+  }
+  body .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  body .nav .menu-nav__links {
+    font-size: 1rem;
+  }
+  body main {
+    display: block;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  body main h1 {
+    font-size: 36px;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    line-height: 46px;
+    width: 100%;
+    position: absolute;
+  }
+  body main .home > p {
+    font-size: 16px;
+    padding-top: 10rem;
+    line-height: 18px;
+    text-align: left;
+    position: absolute;
+  }
+  body main .home .read_more {
+    font-size: 16px;
+    padding-top: 18rem;
+    line-height: 16px;
+    text-align: left;
+    position: absolute;
+  }
+  body main .main-img {
+    width: 391px;
+    height: 279px;
+    position: absolute;
+    padding-top: 10rem;
+  }
+  body main .secondary-img {
+    visibility: hidden;
+  }
+  body footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+body {
+  background: #181719;
+  color: #fff;
+  height: 120vh;
+  line-height: 1;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+  font-family: "Montserrat";
+  padding-top: 2rem;
+}
+
+nav .menu-nav__btn {
+  background: #181719;
+  color: #fff;
+  font-family: "Crimson Pro";
+  font-size: 14px;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+nav__open {
+  visibility: visible;
+}
+
+nav .menu-nav {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .menu-nav__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding-left: 2rem;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+nav .first {
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+  border-radius: 2px;
+}
+
+footer {
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #A9A9A9;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 25px;
+}
+/*# sourceMappingURL=main.css.map */

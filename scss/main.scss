@@ -1,0 +1,82 @@
+@import "config", "body", "menu", "responsive";
+
+body {
+    background: $primary-color;
+    color: #fff;
+    height: 120vh;
+    line-height: 1;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    z-index: 2;
+    width:100%;
+    padding: 1rem;
+}    
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    font-family: $ff-monte;
+    padding-top: 2rem;
+
+    .menu-nav__btn{
+        background: $primary-color;
+        color: #fff;
+        font-family: $ff-crimson;
+        font-size: 14px;
+        padding: 0.2rem;
+        cursor: pointer;
+        
+    }
+
+    &__open{
+        visibility: visible;
+    }
+
+
+    .menu-nav{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        
+
+        &__item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+            padding-left: 2rem;
+            line-height: 22px;
+            font-size: 18px;
+
+                
+        }    
+        }
+        .first{
+            font-weight: 700;
+            border-bottom: 2px solid #fff;
+            border-radius: 2px;
+            
+        }       
+}
+
+footer{
+    font-weight: 700;
+    font-size: 14px;
+    font-family: $ff-monte;
+    color: #A9A9A9;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 25px;
+
+}
+    
+
